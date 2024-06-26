@@ -1,0 +1,265 @@
+/* General Styles */
+body {
+    font-family: Calibri, Arial, sans-serif;
+    color: #10439F;
+    background-color: #E3F2F9;
+    margin: 0;
+    padding: 0;
+    background-image: url('gaming picture.webp'); /* Replace with the actual path to your image */
+    background-size: cover; /* Ensures the image covers the entire body */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed during scroll */
+    box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    padding: 50px; /* Adjust padding as needed */
+    font-size: 30px;
+}
+
+header, nav, footer {
+    background-color: #4D869C;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #7da5b5;
+    color: white;
+    padding: 2em;
+    text-align: center;
+    color: rgb(22, 77, 99);
+}
+
+.content {
+    flex: 1;
+    padding: 2em;
+    background-color: #ffffff;
+    margin: 1em auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: auto; /* Allows the usual scrollbar */
+    padding-bottom: 3rem;
+}
+
+.centered-image {
+    text-align: center;
+    margin: 2em 0;
+}
+
+/* Style for the skills sections */
+.skills-section {
+    background-color: #d6e9f7;
+    border: 1px solid #10439F; /* Border color */
+    padding: 20px; /* Space inside the box */
+    margin: 20px auto; /* Center the box and add space around it */
+    max-width: 600px; /* Max width of the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    /* overflow: hidden; Removed this line */
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section li {
+    margin-bottom: 10px;
+}
+
+.skills-section strong {
+    display: block;
+    margin-top: 20px;
+}
+
+.overflowing-element {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.about-me .content {
+    text-align: center; /* Align content to the center */
+}
+
+h1, h2 {
+    font-family: 'Garamond', serif;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    margin-top: 20px;
+}
+
+.social-media a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.social-media a img:hover {
+    transform: scale(1.2);
+}
+
+.social-media-box {
+    border: 1px solid #3150d8; /* Border color */
+    padding: 20px; /* Space inside the box */
+    margin: 10px 0; /* Space outside the box */
+    border-radius: 10px; /* Rounded corners */
+    text-align: left; /* Center-align the content */
+    background-color: #ba93e4; /* Background color */
+    display: flex; /* Adjust to content size */
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: row; /* Align boxes vertically */
+    justify-content: center; /* Align the entire container to the left */
+    gap: 10px; /* Add space between the boxes */
+    margin-top: 20px;
+}
+
+.social-media-box a {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.social-media-box img {
+    width: 40px; /* Icon width */
+    height: 40px; /* Icon height */
+}
+
+video {
+    width: 600px;
+    height: 400px;
+    display: block;
+    margin: 20px auto; /* Centers the video */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+a {
+    color: #10439F;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    background-color: #204660;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: white;
+    margin-top: auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header nav {
+    margin-top: 0.5em;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 1em 0;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #10439F;
+    border-radius: 5px;
+    font-family: Calibri, Arial, sans-serif;
+}
+
+input[type="submit"] {
+    margin-top: 1em;
+    background-color: #4D869C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #10439F;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 1em;
+        margin: 1em;
+    }
+    
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+    
+    form {
+        padding: 1em;
+    }
+}
+
+
